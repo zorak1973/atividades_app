@@ -1,0 +1,189 @@
+/* CSS Document */
+/* CSS Document */
+
+/**
+ * Skyrim-inspired Menu
+ */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic-ext,greek-ext,greek,latin-ext,cyrillic);
+/*ul#css3menu1,ul#css3menu1 ul{
+	margin:0;list-style:none;padding:0;background-color:rgba(255,255,255,0.6);border-width:0;border-style:solid;border-color:;}*/
+ul#css3menu1,ul#css3menu1 ul{
+	margin:0;
+	list-style:none;
+	padding:0;
+	background-color:rgba(129,190,201,0.8);
+	border-width:0;
+	border-style:solid;
+	border-color:;	background-image: url(../img/bgBotaoAzul.jpg);
+	float:right;
+}
+ul#css3menu1 ul{
+	display:none;position:absolute;left:0;top:100%;/*background-color:transparent;*/border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-moz-box-shadow:0 0 12px rgba(0, 0, 0, 0.1);-webkit-box-shadow:0 0 12px rgba(0, 0, 0, 0.1);box-shadow:0 0 12px rgba(0, 0, 0, 0.1);padding:0;background-image: url(../img/bgAzul.png);}
+ul#css3menu1 li:hover>*{
+	display:block;}
+ul#css3menu1 li{
+	position:relative;display:block;white-space:nowrap;font-size:0;float:left;}
+ul#css3menu1 li:hover{
+	z-index:1;}
+ul#css3menu1 ul ul{
+	position:absolute;left:100%;top:0;}
+/*ul#css3menu1{
+	font-size:0;z-index:999;position:relative;display:inline-block;zoom:1;padding:15px 15px 15px 10px;background-color:none;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;
+	*display:inline;}*/
+ul#css3menu1{
+	font-size:0;z-index:999;position:relative;display:inline-block;zoom:1;padding:2px 6px 2px 2px;background-color:none;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;-moz-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;-webkit-box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;box-shadow:rgba(0, 0, 0, 0.4) 0 0 10px;
+	*display:inline;}
+* html ul#css3menu1 li a{
+	display:inline-block;}
+ul#css3menu1>li{
+	margin:0 0 0 5px;}
+ul#css3menu1 ul>li{
+	margin:5px 0 0;}
+ul#css3menu1 a:active, ul#css3menu1 a:focus{
+	outline-style:none;}
+ul#css3menu1 a{
+	display:block;vertical-align:middle;text-align:left;text-decoration:none;font:12px Ubuntu,sans-serif;/*color:#000000;*/color:#b1d7ce;cursor:pointer;padding:3px;background-color:;background-repeat:repeat;border-width:0px;border-style:none;border-color:;}
+ul#css3menu1 ul li{
+	float:none;margin:0;}
+ul#css3menu1 ul a{
+	text-align:left;padding:9px 28px;/*background-color:#FFFFFF;*/border-width:1px;border-style:solid none none none;/*border-color:#e2e2e2;*/border-color:#549fb5;font:12px Ubuntu,sans-serif;color:#333333;text-decoration:none;}
+ul#css3menu1 li:hover>a,ul#css3menu1 li a.pressed{
+	border-style:none;color:#FFFFFF;text-decoration:none;}
+ul#css3menu1 ul span{
+	background-image:none;padding-right:9px;}
+ul#css3menu1 > li.switch{
+	display:none;cursor:pointer;width:25px;height:20px;padding:9px 28px;}
+ul#css3menu1 > li.switch:before{
+	content:"";position:absolute;display:block;height:4px;width:25px;border-radius:4px;background:#333333;-moz-box-shadow:0 8px #333333, 0 16px #333333;-webkit-box-shadow:0 8px #333333, 0 16px #333333;box-shadow:0 8px #333333, 0 16px #333333;}
+ul#css3menu1 > li.switch:hover:before{
+	background:#fefeff;-moz-box-shadow:0 8px #fefeff, 0 16px #fefeff;-webkit-box-shadow:0 8px #fefeff, 0 16px #fefeff;box-shadow:0 8px #fefeff, 0 16px #fefeff;}
+.c3m-switch-input{
+	display:none;}
+ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li a.pressed{
+	background-color:#1C7ED1; background-image:url(../img/bgBotaoAzulHover.jpg);border-style:solid none none none;/*border-color:#e2e2e2;*/border-color:#54bfb5;color:#fefeff;text-decoration:none;}
+ul#css3menu1>li>a{
+	padding:9px 28px;}
+ul#css3menu1 li.topmenu>a{
+	background-color:transparent;border-width:1px;border-style:solid;border-color:#f1f1f1;/*border-color:#74bfb5;*/border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;padding:9px 28px;/*color:#333333;*/color:#fff;font-weight:bold; }
+ul#css3menu1 li.topmenu:hover>a,ul#css3menu1 li.topmenu a.pressed{
+	background-color:#1C7ED1;background-image:url(../img/bgBotaoAzulHover.jpg);border-style:solid;/*border-color:#1C7ED1;*/border-color:#74bfb5;color:#fefeff;}
+ul#css3menu1 li.subfirst>a{
+	border-color:transparent;border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;}
+ul#css3menu1 li.subfirst:hover>a,ul#css3menu1 li.subfirst a.pressed{
+	border-color:transparent;}
+ul#css3menu1 li.sublast>a{
+	border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;}
+@media screen and (max-width: 768px) {
+	ul#css3menu1 > li {
+		position: initial;}
+	ul#css3menu1 ul .submenu,ul#css3menu1 li > ul {
+		left: 0; right:auto; top: 100%;}
+	ul#css3menu1 .submenu,ul#css3menu1 ul,ul#css3menu1 .column {
+		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-right: 0;width: 100% !important;}
+}
+@media screen and (max-width: 595px) {
+	ul#css3menu1 {
+		width: 100%;}
+	ul#css3menu1 > li {
+		display: none;		position: relative;		width: 100% !important;}
+	ul#css3menu1 > li.switch,.c3m-switch-input:checked + ul#css3menu1 > li + li {
+		display: block;}
+	ul#css3menu1 > li.switch > label {		position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;}}
+	
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html {
+	background: #333 url(../img/tex2res4.png) 0 0 repeat;
+	min-height: 100%;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	color: #FFF;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+}
+
+	a:hover, li:hover > a {
+		color: #FFF;
+	}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
+
+#menu {
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+	font-size: 1.5em;
+	min-height: 100%;
+	margin-left: 1em;
+}
+
+#menu li {
+	position: relative;
+	z-index: 1;
+}
+
+#menu li a {
+	display: block;
+	padding: 0.5em 1em;
+	white-space: nowrap;
+}
+
+	#menu li ul {
+		position: absolute;
+		overflow: hidden;
+		display: none;
+		left: 100%;
+		top: 0.5em;
+		float: none;
+		background-image: -moz-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+		background-image: -webkit-radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+		background-image: radial-gradient(0 50%, ellipse  farthest-side, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 33%, rgba(0,0,0,0) 100%);
+	}
+	
+	#menu li:hover ul {
+		display: block;
+	}
+	
+	#menu li ul a {
+		position: relative;
+		font-size: 0.8em;
+	}
+	
+	#menu li ul a:hover:before {
+		content: "";
+		display: block;
+		width: 1em;
+		height: 1em;
+		background: rgba(0,0,0,0.75);
+		border: 1px solid #FFF;
+		position: absolute;
+		top: 0.5em;
+		left: -0.75em;
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+*/

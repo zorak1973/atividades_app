@@ -1,0 +1,112 @@
+<div class="wt" id="topo">
+	<div id="main" class="container_24">
+			<div class="grid_24">
+				<?php echo img('media/img/logo.png');?>
+			</div>
+	</div>	
+	<div class="clear"></div>	
+</div>
+<?php echo form_hidden('selected', current_url()); ?>
+<?php echo form_hidden('base_url', base_url()); ?>
+<div id="menu">
+	<div id="main" class="container_24">
+		<div class="grid_24">
+			<ul>
+				<li><?php echo anchor('home', 'Home');?></li>
+
+				<li>
+					<?php echo anchor('listar/cliente', utf8_encode('Estações'), 'class="link_false"');?>
+					<ul>
+						<li><?php echo anchor('listar/estacao', utf8_encode('Listar estacões'));?></li>
+						<li><?php echo anchor('exibir/arquivos', utf8_encode('Arquivos A.N.A.'));?></li>
+						
+					</ul>
+				</li>
+				
+				<li>
+					<?php echo anchor('', utf8_encode('Usuário'), 'class="link_false"');?>
+					<ul>
+						<li><?php echo anchor('listar/login', utf8_encode('Listar Usuário'));?></li>
+						<?php 
+						#gestor
+						#--------------------------------------------------------------------
+						if($_SESSION['nivel'] == 1):
+						?>
+							<li><?php echo anchor('cadastrar/login', 'Cadastrar Login Acesso');?></li>
+						<?php endif; ?>
+					</ul>
+					</li>					
+				<?php //endif; ?>
+				
+				<?php 
+					#gestor
+					#--------------------------------------------------------------------
+					//if($_SESSION['id_permissao'] == 1 || $_SESSION['id_permissao'] == 4):
+				?>
+				<!--<li>
+					<?php //echo anchor('', 'Projetos', 'class="link_false"');?>
+					<ul>
+						<li><?php //echo anchor('listar/projeto', 'listar projetos');?></li>
+						<li><?php //echo anchor('cadastrar/projeto', utf8_encode('cadastrar projetos'));?></li>
+					</ul>
+				</li>-->
+				<!--<li>
+					<?php //echo anchor('', 'Financeiro', 'class="link_false"');?>
+					<ul>
+						<li><?php //echo anchor('listar/gasto', 'Listar Gastos');?></li>
+						<li><?php //echo anchor('cadastrar/gasto', 'Cadastrar Gasto');?></li>
+					</ul>
+				</li>-->
+				<!--<li>
+					<?php //echo anchor('', utf8_encode('Funcionário'), 'class="link_false"');?>
+					<ul>
+						<li><?php //echo anchor('listar/funcionario', utf8_encode('Listar Funcionários'));?></li>
+						<li><?php //echo anchor('cadastrar/funcionario', utf8_encode('Cadastrar Funcionários'));?></li>
+						<li><?php //echo anchor('cadastrar/login', utf8_encode('Cadastrar Acesso'));?></li>
+						<li><?php //echo anchor('cadastrar/cadastrar_Dados_Bancarios', utf8_encode('Cadastrar Dados Bancários'));?></li>
+						<li><?php //echo anchor('listar/usuario', utf8_encode('Listar Acessos'));?></li>
+						<li><?php //echo anchor('listar/dadosBancarios', utf8_encode('Listar Dados Bancários'));?></li>
+						<li><?php //echo anchor('editar/alterarSenha', utf8_encode('Alterar Senha'), '');?></li>
+					</ul>
+				</li>-->
+				<!--<li><?php //echo anchor('', utf8_encode('Gastos'), 'class="link_false"');?>
+					<ul>
+						<li><?php //echo anchor('cadastrar/gasto', utf8_encode('Cadastrar Tipo de Gasto'));?></li>
+						<li><?php //echo anchor('cadastrar/gasto_cliente', utf8_encode('Associar Tipo de Gasto a Cliente'));?></li>
+					</ul>
+				</li>-->
+					<?php //if($_SESSION['id_func'] == 19 || $_SESSION['id_func'] ==  2):  ?>
+						<!--<li>
+							<?php //echo anchor('', utf8_encode('Consulta'), 'class="link_false"');?>
+							<ul>
+								<li><?php //echo anchor('exibir/grafico', utf8_encode('Exibir Gráfico'));?></li>
+								
+							</ul>
+							
+						</li>
+						<li>
+							<?php //echo anchor('', utf8_encode('Relatórios'), 'class="link_false"');?>
+							<ul>
+								<li><?php //echo anchor('exibir/gastos_cliente', utf8_encode('Gastos por Cliente'));?></li>
+								<li><?php //echo anchor('exibir/gastos_projeto', utf8_encode('Gastos por Projeto'));?></li>
+							</ul>
+							
+						</li>-->
+					<?php // endif;?>
+				<?php //endif; ?>
+				<?php 
+					#gestor/cliente
+					#--------------------------------------------------------------------
+					//if($_SESSION['id_permissao'] == 1
+					//|| $_SESSION['id_permissao'] == 4):
+				?>
+				<!--<li>
+					 <?php //echo anchor('', utf8_encode('Consulta'), 'class="link_false"');?>
+					
+				</li>-->
+				<?php //endif; ?>
+				<li><?php echo anchor('login/logout', 'Sair', 'class="exit"');?></li>
+			</ul>
+		</div>
+	</div>	
+</div>

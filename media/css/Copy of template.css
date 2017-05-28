@@ -1,0 +1,319 @@
+html, 
+body{
+	font-family: Arial;
+	font-size:12px;
+	height:100%;
+}
+	
+a{
+	text-decoration:none;
+}
+
+#wrap{
+	position:relative;
+	min-height:100%; /* Para browsera modernos */
+	height:auto !important; /* Para browsera modernos */
+	height:100%; /* Para o IE6 */
+}
+
+#content{
+	padding-bottom:100px;
+}
+
+#main{
+    width:960px;
+    margin:auto;
+}
+
+#topo{
+	padding:30px 0;
+}	
+
+#form{
+	background-color:#fff;
+	padding:20px 0;
+	border:1px #e6e7e8 solid;
+}
+
+.esp{
+	padding-bottom:10px;
+}
+
+.esp2{
+	padding:10px 0;
+}
+
+.hd{
+	display:none;
+}
+
+#form table thead td{
+	background:url('../img/bg_label.png');
+	color:#fff;
+	text-transform:uppercase;
+}	
+
+#form table{
+	margin:0;
+}
+
+#form table td{
+	padding:0 5px;
+	line-height:26px;
+}
+
+#listar table td{
+	border:1px solid #e6e7e8;
+}	
+
+#cadastro  td{
+	border-bottom:0px solid #e6e7e8;
+}
+
+#form input[type=text],
+#form input[type=password],
+#form select,
+#form textarea{
+	width:100%;
+	font-size:14px;
+	border:0px;
+	padding:5px 0;
+	border:1px solid #58595b;
+}
+
+#form .select_one{
+	height:29px;
+}	
+
+#form .select_multiple{
+	height:174px;
+}	
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button{
+	margin:0;
+	border:0;
+	padding:0;
+	display:block;
+	padding:5px 0;
+	width:100%;
+	background:#a7a9ac;
+	color:#fff;
+	cursor:pointer;
+	cursor:pointer;
+	line-height:17px;
+	font-size:12px;
+	background:url('../img/bg_bottom.png');
+	border:1px solid #58595b;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover{
+	background:#58595b;
+}
+
+label{
+	display:block;
+	height:27px;
+	line-height:27px;
+	color:#fff;
+	background:url('../img/bg_label.png')  repeat-x;
+	border:1px solid #58595b;
+	padding:0 5px;
+	width:100%;
+	cursor:pointer;
+}
+
+label:hover{
+	background:#00aeef;
+}	
+
+
+#menu{
+	background:url('../img/bg_menu.png') repeat-x;
+	height:60px;
+	border-top:1px solid #e6e7e8;
+	border-bottom:1px solid #e6e7e8;
+	color:#0095da;
+	text-transform:uppercase;
+	font-family:Verdana;
+
+}
+
+#menu ul{
+	height:60px;
+	border-left:1px solid #e6e7e8;
+	border-right:1px solid #e6e7e8;
+}	
+
+#menu li{
+	text-decoration:none;
+	float:left;
+	list-style:none;
+	padding:0;
+	margin:0;
+	height:60px;
+	line-height:60px;
+	border-right:1px solid #e6e7e8;
+}
+
+#menu li:last-child{
+	border:none;	
+}
+
+#menu a{
+	display:block;
+	height:60px;
+	line-height:60px;
+	width:157px;
+	text-align:center;
+	color:#000;
+	font-size:12px;
+}
+
+.menu_selected,
+#menu a:hover{
+	background:#f8f8f8;
+}
+
+#menu li ul{
+	display:none;
+	margin:0;
+	padding:0;
+	width:auto;
+	position:absolute;
+	background:#f8f8f8;
+	border:1px solid #e6e7e8;
+	height:auto;
+}
+
+#menu li li{
+	float:none;
+	height:27px;
+	line-height:27px;
+	border:0;
+	border-bottom:1px solid #e6e7e8;
+}	
+
+#menu li li a{
+	text-align:left;
+	font-size:12px;
+	text-transform:capitalize;
+	padding:0 10px;
+	height:27px;
+	line-height:27px;
+}
+
+#menu li li a:hover{
+	background:#bcbec0;
+}	
+
+#listar{
+	padding-bottom:20px;
+}	
+
+#rodape{
+	background:#f8f8f8;
+	height:100px;
+	line-height:60px;
+	text-align:center;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	border-top:1px solid #e6e7e8;
+}
+
+.title{
+	font-size:12px;
+	border-bottom:1px solid #e6e7e8;
+	line-height:30px;
+}	
+
+.erro_validade{
+	background:#f8f8f8;
+	color:#ff000a;
+	
+}
+
+#form_quali_corpo{
+	border:1px solid #e6e7e8;
+	padding:50px;
+}
+
+#form_quali_corpo label{
+	display:block;
+	height:20px;
+	line-height:20px;
+	color:#fff;
+	background:url('../img/bg_label.png')  repeat-x;
+	border:1px solid #58595b;
+	font-weight:bold;
+	padding:0 5px;
+	margin:0;
+	width:auto;
+	cursor:auto;
+}
+
+#form_quali_corpo input[type=text],
+#form_quali_corpo select{	
+	border:1px solid #58595b;
+	height:20px;
+
+	margin:0;
+	padding:0;
+	width:100%;
+}	
+
+#form_quali_corpo td{
+	padding: 10px;
+}
+
+#form_quali_corpo .td1{
+
+}
+
+#form_quali_corpo .td3{
+	width:400px;
+}
+
+#form_quali_corpo .td4{
+
+}
+
+#form_quali_corpo .abas{
+	background:green;
+}
+
+#form_quali_corpo .titulo{
+	background:blue;
+}
+
+#form_quali_corpo .contaba{
+	border:1px solid #e6e7e8;
+}
+
+#tab1,
+#tab2,
+#tab3,
+#tab4,
+#tab5{
+}
+
+#form_quali_corpo #bto{
+	width:100px;
+}
+
+#form_quali_corpo .abass{
+	padding:10px;
+}
+
+#form_quali_corpo .titles{
+	padding-bottom:10px;
+	margin-bottom:10px;
+	border-bottom:1px solid #e6e7e8;
+}	
+
